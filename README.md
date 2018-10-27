@@ -2,7 +2,7 @@
 
 ### Oh Hai
 
-### How this was made:
+### How this was setup:
 
 1. `$ mkdir whatever` and cd into it
 1. `$ yarn init -y`
