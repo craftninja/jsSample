@@ -9,4 +9,7 @@ describe('palendromify', () => {
   it('returns bob for bo input', () => {
     expect(palendromify('bo')).toBe('bob');
   });
+  it('returns bossob for boss input', () => {
+    expect(palendromify('boss')).toBe('bossob');
+  });
 });
