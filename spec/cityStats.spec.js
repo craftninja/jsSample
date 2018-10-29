@@ -17,4 +17,10 @@ describe('City Stats', () => {
     ]
     expect(listCities).toEqual(expectedList)
   })
+  it('can report highest city', () => {
+    const cityStats = new CityStats(citiesCSV)
+    const highest = cityStats.highestElevation()
+    const expected = 'Silverton'
+    expect(highest).toEqual(expected)
+  })
 })
