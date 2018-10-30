@@ -12,7 +12,7 @@ describe('postfix', () => {
   it('returns 8 for the string`3 5 +`', () => {
     expect(postfix('3 5 +')).toBe(8);
   });
-  it('returns 4 for the string`7 3 1`', () => {
+  it('returns 4 for the string`7 3 -`', () => {
     expect(postfix('7 3 -')).toBe(4);
   });
   it('returns 5 for the string`5 3 * 10 -`', () => {
