@@ -2,6 +2,22 @@
 
 ### Oh Hai
 
+### Running the tests
+
+```sh
+yarn test
+```
+
+### Mess around with functions in the console
+
+1. Enter the node repl with the shell command `node`
+2. Require the function as follows:
+
+    ```js
+    const functionName = require('./lib/functionName');
+    functionName(params, and, [more, params]);
+    ```
+
 ### How this was setup:
 
 1. `$ mkdir whatever` and cd into it
