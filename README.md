@@ -8,6 +8,12 @@
 yarn test
 ```
 
+### Run benchmarks
+
+```sh
+node benchmark/recursionTests.js
+```
+
 ### Mess around with functions in the console
 
 1. Enter the node repl with the shell command `node`
