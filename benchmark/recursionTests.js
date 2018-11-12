@@ -1,15 +1,14 @@
 const Benchmark = require('benchmark');
 
-const notRecursion = require('../lib/notRecursion');
-const recursion = require('../lib/recursion');
+const { forLoop, recursion } = require('../lib/recursionTalk');
 
 const suite = new Benchmark.Suite;
 
 suite.add('recursion', function() {
-  recursion(40000);
+  recursion(400);
 })
-.add('notRecursion', function() {
-  notRecursion(40000);
+.add('forLoop', function() {
+  forLoop(400);
 })
 .on('cycle', function(event) {
   console.log(String(event.target));

@@ -16,13 +16,29 @@ node benchmark/recursionTests.js
 
 ### Mess around with functions in the console
 
-1. Enter the node repl with the shell command `node`
-2. Require the function as follows:
+Enter the node repl with the shell command `node`
+* For exported functions, require the function as follows:
 
     ```js
     const functionName = require('./lib/functionName');
     functionName(params, and, [more, params]);
     ```
+
+* For exported objects, access the function as follows:
+
+    ```js
+    const bundle = require('./lib/bundleFileName');
+    bundle.functionName(params, and, [more, params]);
+    ```
+
+    OR
+
+    ```js
+    const { thing1, thing2 } = require('/lib/thingsFileName');
+    thing1(params);
+    ```
+
+    OR there are many other ways to import, choose your flavor.
 
 ### How this was setup:
 
