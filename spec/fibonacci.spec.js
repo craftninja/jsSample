@@ -27,6 +27,27 @@ describe('recursive fibonacci', () => {
   });
 });
 
+describe('recursive memoized fibonacci', () => {
+  it('finds the 0th fibonacci number', () => {
+    expect(fibonacci.recursiveMemoized(0)).toBe(0);
+  });
+  it('finds the fibonacci number at index 1', () => {
+    expect(fibonacci.recursiveMemoized(1)).toBe(1);
+  });
+  it('finds the fibonacci number at index 2', () => {
+    expect(fibonacci.recursiveMemoized(2)).toBe(1);
+  });
+  it('finds the fibonacci number at index 3', () => {
+    expect(fibonacci.recursiveMemoized(3)).toBe(2);
+  });
+  it('finds the fibonacci number at index 4', () => {
+    expect(fibonacci.recursiveMemoized(4)).toBe(3);
+  });
+  it('finds the fibonacci number at index 9', () => {
+    expect(fibonacci.recursiveMemoized(9)).toBe(34);
+  });
+});
+
 describe('forLoop fibonacci', () => {
   it('finds the 0th fibonacci number', () => {
     expect(fibonacci.forLoop(0)).toBe(0);

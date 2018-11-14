@@ -1,14 +1,17 @@
 const Benchmark = require('benchmark');
 
-const { forLoop, recursive } = require('../lib/fibonacci');
+const { forLoop, recursive, recursiveMemoized } = require('../lib/fibonacci');
 
 const suite = new Benchmark.Suite;
 
 suite.add('recursive', function() {
-  recursive(9);
+  recursive(20);
+})
+.add('recursive with memo', function() {
+  recursiveMemoized(20);
 })
 .add('forLoop', function() {
-  forLoop(9);
+  forLoop(20);
 })
 .on('cycle', function(event) {
   console.log(String(event.target));
