@@ -2,6 +2,10 @@
 
 ### Oh Hai
 
+### Set it up
+
+* fork, clone, yarn install
+
 ### Running the tests
 
 ```sh
